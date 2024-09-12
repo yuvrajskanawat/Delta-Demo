@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    line-height: 5;
+    text-decoration: overline;
+    letter-spacing: 8 px;
+    font-family: Papyrus  ;
+    font-weight: 300
+    
+        
+}
+h3{
+    text-align: right;
+    text-decoration: line-through;
+}
+p{
+    text-align: justify;
+    font-weight: normal;
+    text-decoration: orange underline underline;
+    line-height: 2;
+   }
+h2{
+    font-weight: 900;
+    
+    font-family: Impact  ;
+}
+a{
+    text-decoration: none;
+}

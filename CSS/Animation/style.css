@@ -1,0 +1,30 @@
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: bisque;
+    /* animation-name: widthanimate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0 ;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation: coloranimate 3s ease-in 0s infinite normal ;
+}
+@keyframes fontanimation{
+    from {font-size: 20px;
+    }
+    to { font-size: 40px;}
+}
+@keyframes coloranimate {
+    0%{background-color: bisque;}
+    50%{background-color: yellow;}
+    80%{background-color: red;}
+    100%{background-color: blue;}
+    
+}
+@keyframes widthanimate{
+    from{ width: 10px;
+        background-color: bisque;}
+    to{width: 400px;
+        background-color: blue;}
+}

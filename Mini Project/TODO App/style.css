@@ -1,0 +1,113 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    justify-content: flex-end;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 40%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    word-wrap: break-word; /* Ensure text wraps within the box */
+    position: relative; /* Allows the delete button to position relative to the li */
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 12px; /* Make the delete button smaller */
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute; /* Position the button absolutely within the li */
+    right: 10px; /* Position the button 10px from the right edge */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the button */
+    flex-shrink: 0; /* Prevent the button from shrinking */
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input[type="text"], button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    li {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start;
+    }
+
+    button.delete {
+        align-self: flex-end; /* Align the delete button to the right */
+        position: static; /* Remove absolute positioning on small screens */
+        transform: none; /* Reset transformation */
+        margin-top: 10px;
+    }
+}

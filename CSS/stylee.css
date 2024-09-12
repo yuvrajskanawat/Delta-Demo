@@ -1,0 +1,13 @@
+h1{
+    color: Red;
+    background-color: antiquewhite;
+}
+p{
+    color: aquamarine;
+    background-color: black;
+    font-style: oblique;
+}
+button{
+    color: rgb(0, 63, 105);
+    background-color: burlywood;
+}  

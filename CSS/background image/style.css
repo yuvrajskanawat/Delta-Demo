@@ -1,0 +1,11 @@
+div{
+    width: 1000px;
+    height: 900px;
+    background-color: rgb(114, 255, 133);
+    margin: 10px auto;
+    transition-duration: 2s ease-in-out;
+}
+div:hover{
+    background-image: url("viktor-mischke-2IGDvJa2Bd0-unsplash.jpg");
+    background-size: cover;
+}
